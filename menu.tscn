@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://c10awfxc635a"]
 
 [ext_resource type="Script" uid="uid://cuxykjdmc7q3a" path="res://menu_manager.gd" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://cjfvpfglxf5vg" path="res://play.gd" id="2_ouk20"]
+[ext_resource type="Script" uid="uid://bopsq8xikwjqj" path="res://quit.gd" id="3_mae5d"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
 font_size = 100
@@ -44,12 +46,14 @@ offset_right = 542.0
 offset_bottom = 318.0
 
 [node name="Play" type="Button" parent="menu manager/itemcontainer" unique_id=1262068835]
-layout_mode = 0
+layout_mode = 1
+anchors_preset = -1
+anchor_top = -1.25
+anchor_right = 3.275
 offset_left = -5.0
-offset_top = -50.0
-offset_right = 131.0
 offset_bottom = -6.0
 text = "play!"
+script = ExtResource("2_ouk20")
 
 [node name="Settings" type="Button" parent="menu manager/itemcontainer" unique_id=64186476]
 layout_mode = 0
@@ -66,6 +70,7 @@ offset_top = 102.0
 offset_right = 135.0
 offset_bottom = 146.0
 text = "quit"
+script = ExtResource("3_mae5d")
 
 [node name="Reser" type="Button" parent="menu manager/itemcontainer" unique_id=1479162516]
 layout_mode = 0
@@ -74,3 +79,6 @@ offset_top = 184.0
 offset_right = 133.0
 offset_bottom = 232.0
 text = "reset game"
+
+[connection signal="pressed" from="menu manager/itemcontainer/Play" to="menu manager/itemcontainer/Play" method="_on_play_pressed"]
+[connection signal="pressed" from="menu manager/itemcontainer/Quit" to="menu manager/itemcontainer/Quit" method="_on_quit_pressed"]
