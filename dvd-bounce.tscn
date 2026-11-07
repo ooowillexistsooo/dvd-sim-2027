@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://rqgntdqrrvwr"]
+
+[ext_resource type="Script" uid="uid://b8ob0r3plepqo" path="res://idfk.gd" id="1_mcvv8"]
+[ext_resource type="Texture2D" uid="uid://lbm7rl35d20q" path="res://dvd-logo.png" id="1_v7d0y"]
+[ext_resource type="Script" uid="uid://bbrmb5676a43k" path="res://bounce.gd" id="2_mcvv8"]
+
+[node name="Node2D" type="Node2D" unique_id=651564886]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=943977339]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.8, 16.239998)
+script = ExtResource("1_mcvv8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1175076287 node_paths=PackedStringArray("change_color_node")]
+position = Vector2(404.99997, 306.99997)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_v7d0y")
+script = ExtResource("2_mcvv8")
+change_color_node = NodePath("../ColorRect")

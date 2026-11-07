@@ -1,0 +1,76 @@
+[gd_scene format=3 uid="uid://c10awfxc635a"]
+
+[ext_resource type="Script" uid="uid://cuxykjdmc7q3a" path="res://menu_manager.gd" id="1_lti8b"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 100
+
+[node name="Menu" type="Control" unique_id=1590020903]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1259257137]
+layout_mode = 0
+offset_right = 39.19055
+offset_bottom = 38.983776
+scale = Vector2(29.39484, 16.673603)
+color = Color(0.8627451, 0.68235296, 0.7294118, 1)
+
+[node name="Label" type="Label" parent="." unique_id=977376718]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 15.0
+offset_right = 952.0
+offset_bottom = 152.0
+text = "dvd simulator 2027"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="menu manager" type="Control" parent="." unique_id=537742663]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_lti8b")
+radius = Vector2(600, 30)
+
+[node name="itemcontainer" type="Control" parent="menu manager" unique_id=2023460581]
+anchors_preset = 0
+offset_left = 502.0
+offset_top = 278.0
+offset_right = 542.0
+offset_bottom = 318.0
+
+[node name="Play" type="Button" parent="menu manager/itemcontainer" unique_id=1262068835]
+layout_mode = 0
+offset_left = -5.0
+offset_top = -50.0
+offset_right = 131.0
+offset_bottom = -6.0
+text = "play!"
+
+[node name="Settings" type="Button" parent="menu manager/itemcontainer" unique_id=64186476]
+layout_mode = 0
+offset_left = -2.0
+offset_top = 29.0
+offset_right = 135.0
+offset_bottom = 73.0
+text = "config
+"
+
+[node name="Quit" type="Button" parent="menu manager/itemcontainer" unique_id=2099541415]
+layout_mode = 0
+offset_top = 102.0
+offset_right = 135.0
+offset_bottom = 146.0
+text = "quit"
+
+[node name="Reser" type="Button" parent="menu manager/itemcontainer" unique_id=1479162516]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 184.0
+offset_right = 133.0
+offset_bottom = 232.0
+text = "reset game"
