@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://b8ob0r3plepqo" path="res://idfk.gd" id="1_mcvv8"]
 [ext_resource type="Texture2D" uid="uid://lbm7rl35d20q" path="res://dvd-logo.png" id="1_v7d0y"]
 [ext_resource type="Script" uid="uid://bbrmb5676a43k" path="res://bounce.gd" id="2_mcvv8"]
+[ext_resource type="AudioStream" uid="uid://ta03787r3a4m" path="res://in-game dvd.mp3" id="4_ewe7u"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
 font_size = 44
@@ -23,6 +24,10 @@ texture = ExtResource("1_v7d0y")
 script = ExtResource("2_mcvv8")
 change_color_node = NodePath("../ColorRect")
 count_label = NodePath("../Label")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1234276441]
+stream = ExtResource("4_ewe7u")
+autoplay = true
 
 [node name="Label" type="Label" parent="." unique_id=289368254]
 offset_left = 4.0

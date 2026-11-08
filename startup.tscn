@@ -2,6 +2,7 @@
 
 [ext_resource type="Script" uid="uid://o5uq172o1o4f" path="res://startup.gd" id="1_c4aps"]
 [ext_resource type="FontFile" uid="uid://b5sen1k75g0i1" path="res://Slabo13px-Regular.ttf" id="2_ltcgh"]
+[ext_resource type="AudioStream" uid="uid://cmghn2x7vw2d6" path="res://null.mp3" id="3_u6427"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_aeaqb"]
 font = ExtResource("2_ltcgh")
@@ -59,3 +60,7 @@ max_value = 59.0
 [node name="Button" type="Button" parent="CenterContainer/VBoxContainer" unique_id=362697978]
 layout_mode = 2
 text = "Confirm."
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1452979959]
+stream = ExtResource("3_u6427")
+autoplay = true

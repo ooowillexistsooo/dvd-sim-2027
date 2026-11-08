@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ta03787r3a4m"
+path="res://.godot/imported/in-game dvd.mp3-b2ccb3618339a10054efedb1e2768188.mp3str"
+
+[deps]
+
+source_file="res://in-game dvd.mp3"
+dest_files=["res://.godot/imported/in-game dvd.mp3-b2ccb3618339a10054efedb1e2768188.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

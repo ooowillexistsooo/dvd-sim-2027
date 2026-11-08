@@ -3,12 +3,23 @@ extends Control
 @onready var hour_box: SpinBox = $CenterContainer/VBoxContainer/HBoxContainer/hour
 @onready var minute_box: SpinBox = $CenterContainer/VBoxContainer/HBoxContainer/minute
 @onready var title_label: Label = $CenterContainer/VBoxContainer/HBoxContainer/Label
+@onready var instruction: Label = $CenterContainer/VBoxContainer/Label
 @onready var confirm_button: Button = $CenterContainer/VBoxContainer/Button
 
 var progression_step: int = 0
 
 func _ready() -> void:
 	confirm_button.pressed.connect(_on_confirm_pressed)
+	
+	match savemanager.launch_count:
+		1:
+			instruction.text = "Please set the time."
+		2:
+			instruction.text = "Welcome back. Set the time."
+		3:
+			instruction.text = "You AGAIN? Just set the time. I'm retiring next time this is too much work."
+		_:
+			get_tree().change_scene_to_file("res://menu.tscn")
 	
 func _on_confirm_pressed() -> void:	
 	var current_time = Time.get_time_dict_from_system()
@@ -21,24 +32,24 @@ func _on_confirm_pressed() -> void:
 			var input_minute = int(minute_box.value)
 			if input_hour == real_hour and abs(input_minute - real_minute) <= 2:
 				confirm_button.disabled = true
-				title_label.text = "you win the game! mike, cue the music."
-				# mike, please actually add music later.
+				title_label.text = "You win the game! Mike, cue the music."
 				await get_tree().create_timer(2.5).timeout
-				title_label.text = "did you really think it was that easy? ha."
+				# mike, please actually add music later.
+				title_label.text = "Actually, no. Keep going."
 				await get_tree().create_timer(2.5).timeout
 				progression_step = 1
 				setup_next_setting()
 			else:
 				confirm_button.disabled = true
-				title_label.text = "you know what they say about liars."
+				title_label.text = "You know what they say about liars."
 				await get_tree().create_timer(2).timeout
-				title_label.text = "they die a painful death."
+				title_label.text = "They die a painful death."
 				await get_tree().create_timer(2).timeout
-				title_label.text = "dont let that happen to you."
+				title_label.text = "Don't let that happen to you."
 				await get_tree().create_timer(2).timeout
-				title_label.text = "now, i'm going to let you try again."
+				title_label.text = "Now, I'm going to let you try again."
 				await get_tree().create_timer(2).timeout
-				title_label.text = "don't lie this time."
+				title_label.text = "Don't lie this time."
 				await get_tree().create_timer(2).timeout
 				title_label.text = ":"
 				confirm_button.disabled = false
