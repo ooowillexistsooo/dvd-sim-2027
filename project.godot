@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="dvd-sim-2027"
+config/version="0.1"
 run/main_scene="uid://dbl6v20j7fl8i"
 config/features=PackedStringArray("4.8", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://b0flnvuwutr5i"
 
 [autoload]
 
@@ -28,7 +29,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/RakuScript_Color/plugin.cfg", "res://addons/Rakugo/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/rakugo_regex_lab/plugin.cfg", "res://addons/yard/plugin.cfg")
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/yard/plugin.cfg")
 
 [input]
 
