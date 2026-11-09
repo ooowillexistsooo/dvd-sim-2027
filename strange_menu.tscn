@@ -1,0 +1,65 @@
+[gd_scene format=3 uid="uid://c45as6inuwmce"]
+
+[ext_resource type="Texture2D" uid="uid://vpk10q1lu332" path="res://images/dvd-guy-angry.png" id="1_y06e4"]
+[ext_resource type="Texture2D" uid="uid://cjpvutgl7qqpw" path="res://images/happy-child.png" id="2_11oo5"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 159
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_l5mdd"]
+font_size = 43
+font_color = Color(0, 0, 0, 1)
+
+[node name="StrangeMenu" type="Control" unique_id=105374847]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1855321353]
+layout_mode = 0
+offset_right = 1163.0
+offset_bottom = 658.0
+
+[node name="Label" type="Label" parent="." unique_id=466136404]
+layout_mode = 0
+offset_right = 651.0
+offset_bottom = 123.0
+text = "Sue You!"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Label2" type="Label" parent="." unique_id=423536295]
+layout_mode = 0
+offset_left = 4.0
+offset_top = 182.0
+offset_right = 915.0
+offset_bottom = 241.0
+text = "The Game In Which The DVD Logo Sues You!"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Button" type="Button" parent="." unique_id=1372753316]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 566.0
+offset_right = 265.0
+offset_bottom = 631.0
+theme_override_font_sizes/font_size = 35
+text = "Back to Main Main Menu."
+
+[node name="Button2" type="Button" parent="." unique_id=695240973]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 321.0
+offset_right = 748.0
+offset_bottom = 430.0
+theme_override_font_sizes/font_size = 96
+text = "Play!"
+
+[node name="DvdGuyAngry" type="Sprite2D" parent="." unique_id=967605067]
+position = Vector2(211, 399)
+scale = Vector2(1.773863, 1.6558462)
+texture = ExtResource("1_y06e4")
+
+[node name="HappyChild" type="Sprite2D" parent="." unique_id=454993304]
+position = Vector2(947, 380)
+scale = Vector2(3.4502487, 1.4454719)
+texture = ExtResource("2_11oo5")

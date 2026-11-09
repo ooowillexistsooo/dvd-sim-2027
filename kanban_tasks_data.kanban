@@ -1,0 +1,67 @@
+{
+	"categories": [
+		{
+			"uuid": "3b21d734-1bcd-410f-9a88-053912077838",
+			"title": "Task",
+			"color": "569eff"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "c55a1163-4959-45f5-9d0d-7d5638049122",
+			"title": "Todo",
+			"tasks": [
+				"6ec8a8b9-6061-483c-b088-0e535a84dd5c",
+				"ef180d59-777d-498a-b070-7ea8513176e2"
+			]
+		},
+		{
+			"uuid": "7dd87698-a35e-47bf-b73e-15dcb1dd9d08",
+			"title": "Doing",
+			"tasks": [
+				"28e6d778-71ff-476f-9e01-8b384ef660f5"
+			]
+		},
+		{
+			"uuid": "006ff75b-0927-4ead-9d48-efb260a6bc47",
+			"title": "Done",
+			"tasks": []
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "28e6d778-71ff-476f-9e01-8b384ef660f5",
+			"title": "Add the ace attourney part",
+			"description": "",
+			"category": "3b21d734-1bcd-410f-9a88-053912077838",
+			"steps": []
+		},
+		{
+			"uuid": "6ec8a8b9-6061-483c-b088-0e535a84dd5c",
+			"title": "Add the dating sim",
+			"description": "",
+			"category": "3b21d734-1bcd-410f-9a88-053912077838",
+			"steps": []
+		},
+		{
+			"uuid": "ef180d59-777d-498a-b070-7ea8513176e2",
+			"title": "improve startup",
+			"description": "",
+			"category": "3b21d734-1bcd-410f-9a88-053912077838",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"c55a1163-4959-45f5-9d0d-7d5638049122"
+			],
+			[
+				"7dd87698-a35e-47bf-b73e-15dcb1dd9d08"
+			],
+			[
+				"006ff75b-0927-4ead-9d48-efb260a6bc47"
+			]
+		]
+	}
+}

@@ -2,11 +2,16 @@
 
 [ext_resource type="Script" uid="uid://bcq0qyndfyvnx" path="res://menumusic.gd" id="1_4hy44"]
 [ext_resource type="Script" uid="uid://cuxykjdmc7q3a" path="res://menu_manager.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://b0xbh3l3qstim" path="res://images/happy-world.png" id="2_kk3ma"]
 [ext_resource type="Script" uid="uid://cjfvpfglxf5vg" path="res://play.gd" id="2_ouk20"]
 [ext_resource type="Script" uid="uid://bopsq8xikwjqj" path="res://quit.gd" id="3_mae5d"]
+[ext_resource type="Script" uid="uid://vk7k72ml71fu" path="res://resetbeginning.gd" id="5_ytr4m"]
+[ext_resource type="Texture2D" uid="uid://cjpvutgl7qqpw" path="res://images/happy-child.png" id="7_nrnbx"]
+[ext_resource type="Texture2D" uid="uid://dken4uithekke" path="res://images/dvd-guy.png" id="8_iqepy"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
 font_size = 100
+font_color = Color(0, 0, 0, 1)
 
 [node name="Menu" type="Control" unique_id=1590020903]
 layout_mode = 3
@@ -17,12 +22,12 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_4hy44")
 
-[node name="ColorRect" type="ColorRect" parent="." unique_id=1259257137]
+[node name="ColorRect" type="TextureRect" parent="." unique_id=1667614203]
 layout_mode = 0
 offset_right = 39.19055
 offset_bottom = 38.983776
-scale = Vector2(29.39484, 16.673603)
-color = Color(0.8627451, 0.68235296, 0.7294118, 1)
+scale = Vector2(5.033692, 3.65681)
+texture = ExtResource("2_kk3ma")
 
 [node name="Label" type="Label" parent="." unique_id=977376718]
 layout_mode = 0
@@ -82,7 +87,27 @@ offset_right = 133.0
 offset_bottom = 232.0
 text = "reset game"
 
+[node name="begin" type="Button" parent="menu manager/itemcontainer" unique_id=1452867880]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 265.0
+offset_right = 133.0
+offset_bottom = 313.0
+text = "reset intro"
+script = ExtResource("5_ytr4m")
+
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=701030983]
+
+[node name="HappyChild" type="Sprite2D" parent="." unique_id=732352072]
+position = Vector2(390, 415)
+scale = Vector2(2.263937, 2.4281418)
+texture = ExtResource("7_nrnbx")
+
+[node name="DvdGuy" type="Sprite2D" parent="." unique_id=773984825]
+position = Vector2(922, 306)
+scale = Vector2(1.8174099, 1.7147245)
+texture = ExtResource("8_iqepy")
 
 [connection signal="pressed" from="menu manager/itemcontainer/Play" to="menu manager/itemcontainer/Play" method="_on_play_pressed"]
 [connection signal="pressed" from="menu manager/itemcontainer/Quit" to="menu manager/itemcontainer/Quit" method="_on_quit_pressed"]
+[connection signal="pressed" from="menu manager/itemcontainer/begin" to="menu manager/itemcontainer/begin" method="_on_begin_pressed"]

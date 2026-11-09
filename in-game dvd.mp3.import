@@ -13,7 +13,7 @@ dest_files=["res://.godot/imported/in-game dvd.mp3-b2ccb3618339a10054efedb1e2768
 [params]
 
 loop=true
-loop_offset=0
-bpm=0
+loop_offset=3.61
+bpm=0.0
 beat_count=0
 bar_beats=4

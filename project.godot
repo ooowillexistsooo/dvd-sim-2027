@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 savemanager="*uid://xryi38vpx4lo"
+TimeTracker="*uid://bid2wstne8wqs"
+Rakugo="*res://addons/Rakugo/Rakugo.gd"
 
 [display]
 
@@ -26,7 +28,7 @@ window/stretch/aspect="expand"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg", "res://addons/yard/plugin.cfg")
+enabled=PackedStringArray("res://addons/RakuScript_Color/plugin.cfg", "res://addons/Rakugo/plugin.cfg", "res://addons/godot_super-wakatime/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/rakugo_regex_lab/plugin.cfg", "res://addons/yard/plugin.cfg")
 
 [input]
 

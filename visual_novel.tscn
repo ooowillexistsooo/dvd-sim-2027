@@ -1,0 +1,167 @@
+[gd_scene format=3 uid="uid://cuxktsandhq4a"]
+
+[ext_resource type="Texture2D" uid="uid://lbm7rl35d20q" path="res://dvd-logo.png" id="1_xxy11"]
+[ext_resource type="FontFile" uid="uid://b5sen1k75g0i1" path="res://Slabo13px-Regular.ttf" id="2_6oq11"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_sgb84"]
+font_size = 36
+font_color = Color(0, 0, 0, 1)
+
+[sub_resource type="LabelSettings" id="LabelSettings_l5mdd"]
+font = ExtResource("2_6oq11")
+font_size = 39
+font_color = Color(1, 0, 0, 1)
+
+[node name="VisualNovel" type="Control" unique_id=152724084]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=357128376]
+layout_mode = 0
+offset_right = 1184.0
+offset_bottom = 680.0
+color = Color(1, 0.64773816, 0.8601187, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1419978866]
+layout_mode = 0
+offset_left = -297.0
+offset_top = -319.0
+offset_right = 40.0
+offset_bottom = 181.0
+rotation = 0.2920204
+scale = Vector2(2.9043367, 1.9585159)
+
+[node name="Label" type="Label" parent="." unique_id=1604412832]
+layout_mode = 0
+offset_left = 513.0
+offset_top = 591.0
+offset_right = 1141.0
+offset_bottom = 641.0
+text = "The Love Interests of the DVD logo..!"
+label_settings = SubResource("LabelSettings_sgb84")
+
+[node name="Button" type="Button" parent="." unique_id=954625356]
+layout_mode = 0
+offset_left = 170.0
+offset_top = 270.0
+offset_right = 324.0
+offset_bottom = 366.0
+theme_override_font_sizes/font_size = 64
+text = "Play!"
+
+[node name="DvdLogo" type="Sprite2D" parent="." unique_id=1182813964]
+position = Vector2(857, 315)
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_xxy11")
+
+[node name="Button2" type="Button" parent="." unique_id=135833448]
+layout_mode = 0
+offset_left = -3.0
+offset_top = 602.0
+offset_right = 438.0
+offset_bottom = 647.0
+theme_override_font_sizes/font_size = 27
+text = "Back to main menu. (Irriversable)"
+
+[node name="Label2" type="Label" parent="." unique_id=1058535404]
+layout_mode = 0
+offset_left = 653.0
+offset_top = 64.0
+offset_right = 707.0
+offset_bottom = 112.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2" unique_id=592329079]
+layout_mode = 0
+offset_left = 349.0
+offset_top = 27.0
+offset_right = 403.0
+offset_bottom = 75.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2" unique_id=462094482]
+layout_mode = 0
+offset_left = 7.0
+offset_top = 386.0
+offset_right = 61.0
+offset_bottom = 434.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2" unique_id=818847688]
+layout_mode = 0
+offset_left = -660.0
+offset_top = -5.0
+offset_right = -606.0
+offset_bottom = 43.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2" unique_id=2049194859]
+layout_mode = 0
+offset_left = 224.0
+offset_top = -65.0
+offset_right = 278.0
+offset_bottom = -17.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2/Label2" unique_id=80900135]
+layout_mode = 0
+offset_left = -241.0
+offset_top = -298.0
+offset_right = -187.0
+offset_bottom = -250.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2/Label2/Label2" unique_id=978631487]
+layout_mode = 0
+offset_left = -264.0
+offset_top = 309.0
+offset_right = -210.0
+offset_bottom = 357.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2/Label2/Label2/Label2" unique_id=1541320485]
+layout_mode = 0
+offset_left = 43.0
+offset_top = -270.0
+offset_right = 97.0
+offset_bottom = -222.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2/Label2/Label2/Label2/Label2" unique_id=1224924059]
+layout_mode = 0
+offset_left = 362.0
+offset_top = 101.0
+offset_right = 416.0
+offset_bottom = 149.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2/Label2/Label2/Label2/Label2/Label2" unique_id=379403364]
+layout_mode = 0
+offset_left = 183.0
+offset_top = 270.0
+offset_right = 237.0
+offset_bottom = 318.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")
+
+[node name="Label2" type="Label" parent="Label2/Label2/Label2/Label2/Label2/Label2/Label2/Label2/Label2/Label2" unique_id=1704043378]
+layout_mode = 0
+offset_left = -164.0
+offset_top = -495.0
+offset_right = -110.0
+offset_bottom = -447.0
+text = "❤"
+label_settings = SubResource("LabelSettings_l5mdd")

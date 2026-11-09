@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://2xq05651ie6l"]
+
+[node name="SueYou!" type="Node2D" unique_id=2004282297]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1094846717]
