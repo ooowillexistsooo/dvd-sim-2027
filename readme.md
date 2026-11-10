@@ -1,6 +1,8 @@
 # DVD SIMULATOR 2027
 A game inspired by the stanley parable, but its the dvd logo bouncing.
 
+<b>!!! IT IS A WORK IN PROGRESS !!! </b>
+
 ![image](images/happy-world.png)
 
 <br>
@@ -13,6 +15,9 @@ A game inspired by the stanley parable, but its the dvd logo bouncing.
 - The setup screen.
 - Some Art
 - Music :)
+
+## endings
+It wouldn't be stanley parable inspired without endings, right? So far, I worked on the dating sim ending and the ending where it sures you.
 
 ## What is used..?
 - Godor
